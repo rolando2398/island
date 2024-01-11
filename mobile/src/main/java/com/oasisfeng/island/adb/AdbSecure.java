@@ -118,5 +118,5 @@ public class AdbSecure {
 				() -> toggleAdbSecure(activity, false, true));
 	}
 
-	private static final String TAG = "Island.ADBS";
-}
+	private static final String TAG =
+pm grant com.oasisfeng.island android.permission.GET_APP_OPS_STATS
