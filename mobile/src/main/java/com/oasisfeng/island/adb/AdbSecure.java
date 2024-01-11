@@ -1,6 +1,6 @@
 package com.oasisfeng.island.adb;
 
-import android.Manifest;
+843cfcb3344136956c6847c6a65e86463d5518da android.Manifest;
 import android.app.Application;
 import android.app.admin.DevicePolicyManager;
 import android.content.Context;
