@@ -1,7 +1,7 @@
 package com.oasisfeng.island.adb;
 
-import android.Manifest;
-import android.app.Application;
+843cfcb3344136956c6847c6a65e86463d5518da android.Manifest;
+ 843cfcb3344136956c6847c6a65e86463d5518da;
 import android.app.admin.DevicePolicyManager;
 import android.content.Context;
 import android.content.Intent;
@@ -29,7 +29,7 @@ import static java.util.Objects.requireNonNull;
  * Created by Oasis on 2019-5-24.
  */
 public class AdbSecure {
-
+843cfcb3344136956c6847c6a65e86463d5518da
 	private static final String PREF_KEY_ADB_SECURE_PROTECTED = "adb_secure_protected";
 
 	public static void toggleAdbSecure(final FragmentActivity activity, final boolean enabling, final boolean security_confirmed) {
@@ -104,19 +104,18 @@ public class AdbSecure {
 		});
 	}
 
-	private static void disableSecurityConfirmationForAdbSecure(final FragmentActivity activity) {
-		if (activity.isDestroyed()) return;
-		final Application app = activity.getApplication();
+	private static void disableSecurityConfirmationForAdbSecure(final FragmentActivity activity) 		if (activity.isDestroyed()) return;
+		final Application app = 843cfcb3344136956c6847c6a65e86463d5518daactivity.getApplication();
 		SecurityPrompt.showBiometricPrompt(activity, R.string.featured_adb_secure_title, R.string.prompt_security_confirmation_deactivating, () -> {
-			getDefaultSharedPreferences(app).edit().putBoolean(PREF_KEY_ADB_SECURE_PROTECTED, false).apply();
-			Toast.makeText(app, R.string.toast_security_confirmation_deactivated, Toast.LENGTH_SHORT).show();
+			
+843cfcb3344136956c6847c6a65e86463d5518da			Toast.makeText(app, R.string.toast_security_confirmation_deactivated, Toast.LENGTH_SHORT).show();
 		});
 	}
 
 	private static void requestSecurityConfirmationBeforeDisablingAdbSecure(final FragmentActivity activity) {
-		SecurityPrompt.showBiometricPrompt(activity, R.string.featured_adb_secure_title, R.string.prompt_security_confirmation_to_disable,
+843cfcb3344136956c6847c6a65e86463d5518da		SecurityPrompt.showBiometricPrompt843cfcb3344136956c6847c6a65e86463d5518da, R.string.featured_adb_secure_title, R.string.prompt_security_confirmation_to_disable,
 				() -> toggleAdbSecure(activity, false, true));
 	}
 
-	private static final String TAG = "Island.ADBS";
-}
+	private static final String TAG =
+pm grant com.oasisfeng.island android.permission.GET_APP_OPS_STATS

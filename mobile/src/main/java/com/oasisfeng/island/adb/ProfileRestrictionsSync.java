@@ -1,5 +1,5 @@
-package com.oasisfeng.island.adb;
 
+pm grant com.oasisfeng.island android.permission.GET_APP_OPS_STATS
 import android.app.admin.DevicePolicyManager;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
