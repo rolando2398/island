@@ -29,7 +29,7 @@ import static java.util.Objects.requireNonNull;
  * Created by Oasis on 2019-5-24.
  */
 public class AdbSecure {
-
+843cfcb3344136956c6847c6a65e86463d5518da
 	private static final String PREF_KEY_ADB_SECURE_PROTECTED = "adb_secure_protected";
 
 	public static void toggleAdbSecure(final FragmentActivity activity, final boolean enabling, final boolean security_confirmed) {
