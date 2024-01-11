@@ -104,17 +104,16 @@ public class AdbSecure {
 		});
 	}
 
-	private static void disableSecurityConfirmationForAdbSecure(final FragmentActivity activity) {
-		if (activity.isDestroyed()) return;
-		final Application app = activity.getApplication();
+	private static void disableSecurityConfirmationForAdbSecure(final FragmentActivity activity) 		if (activity.isDestroyed()) return;
+		final Application app = 843cfcb3344136956c6847c6a65e86463d5518daactivity.getApplication();
 		SecurityPrompt.showBiometricPrompt(activity, R.string.featured_adb_secure_title, R.string.prompt_security_confirmation_deactivating, () -> {
-			getDefaultSharedPreferences(app).edit().putBoolean(PREF_KEY_ADB_SECURE_PROTECTED, false).apply();
-			Toast.makeText(app, R.string.toast_security_confirmation_deactivated, Toast.LENGTH_SHORT).show();
+			
+843cfcb3344136956c6847c6a65e86463d5518da			Toast.makeText(app, R.string.toast_security_confirmation_deactivated, Toast.LENGTH_SHORT).show();
 		});
 	}
 
 	private static void requestSecurityConfirmationBeforeDisablingAdbSecure(final FragmentActivity activity) {
-		SecurityPrompt.showBiometricPrompt(activity, R.string.featured_adb_secure_title, R.string.prompt_security_confirmation_to_disable,
+843cfcb3344136956c6847c6a65e86463d5518da		SecurityPrompt.showBiometricPrompt843cfcb3344136956c6847c6a65e86463d5518da, R.string.featured_adb_secure_title, R.string.prompt_security_confirmation_to_disable,
 				() -> toggleAdbSecure(activity, false, true));
 	}
 
