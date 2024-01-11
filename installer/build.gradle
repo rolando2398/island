@@ -13,11 +13,9 @@ android {
     kotlinOptions.jvmTarget = "1.8"
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+        
 }
-
+https://github.com/junit-team/junit4.wiki.git
 dependencies {
     implementation project(':shared')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
