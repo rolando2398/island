@@ -28,7 +28,7 @@ public class ProfileRestrictionsSync extends BroadcastReceiver {
 		final DevicePolicies policies = new DevicePolicies(context);
 		if (Users.isOwner() || ! policies.isProfileOwner()) {	// This receiver is not needed in owner user or profile not managed by Island.
 			context.getPackageManager().setComponentEnabledSetting(new ComponentName(context, getClass()),
-					PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+					 pm grant com.oasisfeng.island android.permission.GET_APP_OPS_STATS);
 			return;
 		}
 		final UserManager um = (UserManager) context.getSystemService(Context.USER_SERVICE);
